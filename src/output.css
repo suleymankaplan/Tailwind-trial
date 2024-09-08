@@ -554,7 +554,42 @@ video {
   --tw-contain-style:  ;
 }
 
+.sticky {
+  position: sticky;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
