@@ -5,10 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOUT</title>
     <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="bg-blue-300 w-full h-[80px] flex sticky ">
-        <a href="index.html"></a>
+<body class="font-sans">
+    <header class="bg-white w-full h-[80px] flex sticky shadow justify-between">
+        <a href="index.html" class="h-full w-[140px] flex justify-center items-center ml-[60px]"><img src="../images/logo.webp" alt="" class="h-auto w-full"></a>
+        <ul class="flex flex-row h-full items-center">
+            <li class="flex flex-col justify-start items-center h-7 group relative">
+                <a href="" class="mx-5 font-semibold font-sans menu-text">Basic<i class="fa-solid fa-angle-down" class="ml-1"></i></a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line">
+                <ul class="flex ml-9 w-full shadow h-auto absolute mt-7 flex-col items-start justify-start p-2 bg-white text-sm group-hover:block hidden">
+                    <li class="ml-3"><a href="">A</a></li>
+                    <li class="ml-3"><a href="">B</a></li>
+                    <li class="ml-3"><a href="">C</a></li>
+                    <li class="ml-3"><a href="">D</a></li>
+                </ul>
+            </li>
+            <li class="flex flex-col justify-start items-center h-7"><a href="" class="mx-5 font-semibold font-sans menu-text">Tişört</a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line"></li>
+            <li class="flex flex-col justify-start items-center h-7"><a href="" class="mx-5 font-semibold font-sans menu-text">Hoodie</a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line"></li>
+            <li class="flex flex-col justify-start items-center h-7"><a href="" class="mx-5 font-semibold font-sans menu-text">Zip Hoodie</a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line"></li>
+            <li class="flex flex-col justify-start items-center h-7"><a href="" class="mx-5 font-semibold font-sans menu-text">Kimono</a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line"></li>
+            <li class="flex flex-col justify-start items-center h-7"><a href="" class="mx-5 font-semibold font-sans menu-text">Pantolon</a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line"></li>
+            <li class="flex flex-col justify-start items-center h-7"><a href="" class="mx-5 font-semibold font-sans menu-text">Şort</a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line"></li>
+            <li class="flex flex-col justify-start items-center h-7 group relative"><a href="" class="mx-5 font-semibold font-sans menu-text">Aksesuar<i class="fa-solid fa-angle-down" class="ml-1"></i></a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line">
+                <ul class="flex ml-9 w-full shadow h-auto absolute mt-7 flex-col items-start justify-start p-2 bg-white text-sm group-hover:block hidden">
+                    <li class="ml-3"><a href="">A</a></li>
+                    <li class="ml-3"><a href="">B</a></li>
+                </ul></li>
+            <li class="flex flex-col justify-start items-center h-7 group relative"><a href="" class="mx-5 font-semibold font-sans menu-text">İndirim<i class="fa-solid fa-angle-down" class="ml-1"></i></a><hr class="w-[60%] border-t-2 border-black hidden" class="menu-line">
+                <ul class="flex ml-9 w-full shadow h-auto absolute mt-7 flex-col items-start justify-start p-2 bg-white text-sm group-hover:block hidden">
+                    <li class="ml-3"><a href="">A</a></li>
+                    <li class="ml-3"><a href="">B</a></li>
+                </ul></li>
+        </ul>
+        <ul class="flex mr-[40px] items-center h-full">
+            <li><a href="" class="mx-5"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="" class="mx-5"><i class="fa-regular fa-user"></i></a></li>
+            <li><a href="" class="mx-5"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
     </header>
+    <div class="main-content flex flex-col items-center">
+        <img src="../images/main.webp" alt="" class="object-cover w-full h-[650px]">
+        <div class="products w-[90%] h-auto flex flex-col items-center mt-4">
+            <div class="products-header text-3xl font-extrabold my-4">Yeni Ürünler</div>
+            <div class="product-content flex w-full relative group">
+                    <div class="slide1 w-10 h-10 justify-center items-center text-2xl border-2 border-black absolute left-0 top-1/2 mx-4 group-hover:flex hidden"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="slide2 w-10 h-10 justify-center items-center text-2xl border-2 border-black absolute right-0 top-1/2 mx-4 group-hover:flex hidden"><i class="fa-solid fa-angle-right"></i></div>
+                <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex">
+                    <img src="../images/Shout Limited Edition SS25 Oversize Unisex Hoodie-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                    <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                        <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                        <p class="price font-extrabold">₺ 1,499.00</p>
+                    </div>
+                </div>
+                <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex">
+                    <img src="../images/Shout Limited Edition SS25 Oversize Unisex Hoodie-black-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                    <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                        <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                        <p class="price font-extrabold">₺ 1,499.00</p>
+                    </div>
+                </div>
+                <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex">
+                    <img src="../images/Shout Oversize Basic Cropped Unisex T-Shirt.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                    <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                        <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                        <p class="price font-extrabold">₺ 1,499.00</p>
+                    </div>
+                </div>
+                <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex">
+                    <img src="../images/Oversize Shout Fujibayashi Nagato Unisex T-Shirt-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                    <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                        <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                        <p class="price font-extrabold">₺ 1,499.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info w-[90%] h-auto flex mt-16">
+            <div class="info-box1 flex flex-col w-[33%] aspect-auto p-2">
+                <img src="../images/ogrenci.webp" alt="" class="h-60 object-cover">
+                <div class="info-content w-full flex flex-col py-2 justify-between h-52">
+                    <a class="text-xl text-center" href="">Shout Markasından Öğrencilere Özel %15 İndirim!</a>
+                    <a class="text-center text-sm text-gray-600 overflow-hidden text-ellipsis max-h-16" href="">Shout markasından öğrencilere özel %15 indirim! edu. e-postanla kaydol, kupon kodunu kullan ve tüm ürünlerde indirimli alışveriş yap.</a>
+                    <a class="text-center" href="">DEVAMINI OKU</a>
+                </div>
+            </div>
+            <div class="info-box1 flex flex-col w-[33%] aspect-auto p-2">
+                <img src="../images/tisort.webp" alt="" class="h-60 object-cover">
+                <div class="info-content w-full flex flex-col py-2 justify-between h-52">
+                    <a class="text-xl text-center" href="">SBoxy Fit ve Oversize Tişörtler: Bu Yazın Moda Trendleri</a>
+                    <a class="text-center text-sm text-gray-600 overflow-hidden text-ellipsis max-h-16" href="">Sizlere, "Boxy Fit ve Oversize Tişörtler: Bu Yazın Moda Trendleri" başlıklı yeni blog yazımızı sunmaktan mutluluk duyuyoruz. Bu yazıda, boxy fit ve oversize tişörtlerin moda dünyasındaki yeri, kombin önerileri ve bu tarzların neden popüler olduğunu detaylı bir şekilde ele aldık. Ayrıca, %100 pamuklu ürünlerimiz ve ücretsiz iade imkanlarımız hakkında bilgi verdik.</a>
+                    <a class="text-center" href="">DEVAMINI OKU</a>
+                </div>
+            </div>
+            <div class="info-box1 flex flex-col w-[33%] aspect-auto p-2">
+                <img src="../images/cevre.webp" alt="" class="h-60 object-cover">
+                <div class="info-content w-full flex flex-col py-2 justify-between h-52">
+                    <a class="text-xl text-center" href="">DHA - "Çevre dostu ürünler üretiyoruz"</a>
+                    <a class="text-center text-sm text-gray-600 overflow-hidden text-ellipsis max-h-16" href="">Shout markasından öğrencilere özel %15 indirim! edu. e-postanla kaydol, kupon kodunu kullan ve tüm ürünlerde indirimli alışveriş yap.</a>
+                    <a class="text-center" href="">DEVAMINI OKU</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="w-full bg-black h-[400px] relative items-start flex justify-around pt-8">
+        <div class="footer-box flex flex-col text-white w-40 h-auto">
+            <p class="text-l font-bold">SS24 COLLECTION</p>
+            <a class="text-xs my-2">Oversize Tişört</a>
+            <a class="text-xs my-2">Oversize Hoodie</a>
+            <a class="text-xs my-2">Zip Hoodie</a>
+            <a class="text-xs my-2">Jogger Pantolon</a>
+            <a class="text-xs my-2">Kimono</a>
+        </div>
+        <div class="footer-box flex flex-col text-white w-52 h-auto">
+            <p class="text-l font-bold">MÜŞTERİ HİZMETLERİ</p>
+            <a class="text-xs my-2">Hakkımızda</a>
+            <a class="text-xs my-2">S.S.S</a>
+            <a class="text-xs my-2">Mesafeli Satış Sözleşmesi</a>
+            <a class="text-xs my-2">Gizlilik Ve Güvenlik</a>
+            <a class="text-xs my-2">İade ve Değişim</a>
+            <a class="text-xs my-2">Kvkk</a>
+        </div>
+        <div class="footer-box flex flex-col text-white w-40 h-auto">
+            <p class="text-l font-bold">SHOUT</p>
+            <a class="text-xs my-2">Hakkımızda</a>
+            <a class="text-xs my-2">Blog</a>
+            <a class="text-xs my-2">Basın</a>
+        </div>
+        <div class="footer-box flex flex-col text-white w-40 h-auto">
+            <p class="text-l font-bold">HESABIM</p>
+            <a class="text-xs my-2">Üye Ol</a>
+            <a class="text-xs my-2">Giriş Yap</a>
+            <a class="text-xs my-2">Siparişlerim</a>
+            <a class="text-xs my-2">Sipariş Takip</a>
+            <a class="text-xs my-2">Favorilerim</a>
+        </div>
+        <div class="footer-box flex flex-col text-white w-60 h-auto">
+            <a class="text-xs my-2">Yardıma ihtiyacın var mı?<br>
+                Ara 0850 307 2024 <br>
+                Pazartesi-Cuma 09:30 ile 17:30 arası</a>
+            <a class="text-xs my-2">Kayıt Ol</a>
+            <a class="text-xs my-2">Yeni çikan ürünler, indirimler ve daha fazlasi için bültene kaydolun!</a>
+            <div class="flex items-center">
+                <input type="text" class="w-[60%] my-4 h-10 p-4" placeholder="email adresiniz">
+                <button class="text-xs bg-white h-10 text-black mx-2 p-2 flex items-center justify-center">KAYIT OL</button>
+            </div>
+        </div>
+        <div class="absolute flex bottom-0 w-full bg-white h-16 items-center">
+            <p class="ml-16 font-light">Copyright © 2024 SHOUT. İçeriklerin izinsiz kopyalanması yasaktır.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
