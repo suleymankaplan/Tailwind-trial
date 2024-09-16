@@ -44,39 +44,82 @@
             <li><a href="" class="mx-5"><i class="fa-solid fa-basket-shopping"></i></a></li>
         </ul>
     </header>
+    <div class="add-to-cart-page absolute w-full h-[100%] opacity-30 bg-black z-50 hidden">
+        <div class="add-to-cart-box"></div>
+    </div>
     <div class="main-content flex flex-col items-center">
         <img src="../images/main.webp" alt="" class="object-cover w-full h-[650px]">
         <div class="products w-[90%] h-auto flex flex-col items-center mt-4">
             <div class="products-header text-3xl font-extrabold my-4">Yeni Ürünler</div>
-            <div class="product-content flex w-full relative group">
-                    <div class="slide1 w-10 h-10 justify-center items-center text-2xl border-2 border-black absolute left-0 top-1/2 mx-4 group-hover:flex hidden"><i class="fa-solid fa-angle-left"></i></div>
-                    <div class="slide2 w-10 h-10 justify-center items-center text-2xl border-2 border-black absolute right-0 top-1/2 mx-4 group-hover:flex hidden"><i class="fa-solid fa-angle-right"></i></div>
-                <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex">
-                    <img src="../images/Shout Limited Edition SS25 Oversize Unisex Hoodie-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
-                    <div class="product-description flex flex-col w-full items-center justify-around text-center">
-                        <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
-                        <p class="price font-extrabold">₺ 1,499.00</p>
+            <div class="product-content flex w-full relative group z-10">
+                <div class="slide w-10 h-10 justify-center items-center text-2xl border-2 border-black absolute left-0 top-1/2 mx-4 hidden z-50 cursor-pointer group-hover:flex"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="slide w-10 h-10 justify-center items-center text-2xl border-2 border-black absolute right-0 top-1/2 mx-4 hidden z-50 cursor-pointer group-hover:flex"><i class="fa-solid fa-angle-right"></i></div>
+                <div class="product-page1 flex">
+                    <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex relative justify-center z-20">
+                        <img src="../images/Shout Limited Edition SS25 Oversize Unisex Hoodie-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                        <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                            <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                            <p class="price font-extrabold">₺ 1,499.00</p>
+                        </div>
+                        <button class="cart-box absolute bottom-20 hidden justify-center items-center border-2 border-black w-[90%] h-12 bg-white font-semibold text-sm" onclick="cartBox()">SEPETE EKLE</button>
+                    </div>
+                    <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex relative justify-center">
+                        <img src="../images/Shout Limited Edition SS25 Oversize Unisex Hoodie-black-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                        <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                            <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                            <p class="price font-extrabold">₺ 1,499.00</p>
+                        </div>
+                        <button class="cart-box absolute bottom-20 hidden justify-center items-center border-2 border-black w-[90%] h-12 bg-white font-semibold text-sm">SEPETE EKLE</button>
+                    </div>
+                    <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex relative justify-center">
+                        <img src="../images/Shout Oversize Basic Cropped Unisex T-Shirt-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                        <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                            <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                            <p class="price font-extrabold">₺ 1,499.00</p>
+                        </div>
+                        <button class="cart-box absolute bottom-20 hidden justify-center items-center border-2 border-black w-[90%] h-12 bg-white font-semibold text-sm">SEPETE EKLE</button>
+                    </div>
+                    <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex relative justify-center">
+                        <img src="../images/Oversize Shout Fujibayashi Nagato Unisex T-Shirt-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                        <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                            <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                            <p class="price font-extrabold">₺ 1,499.00</p>
+                        </div>
+                        <button class="cart-box absolute bottom-20 hidden justify-center items-center border-2 border-black w-[90%] h-12 bg-white font-semibold text-sm">SEPETE EKLE</button>
                     </div>
                 </div>
-                <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex">
-                    <img src="../images/Shout Limited Edition SS25 Oversize Unisex Hoodie-black-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
-                    <div class="product-description flex flex-col w-full items-center justify-around text-center">
-                        <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
-                        <p class="price font-extrabold">₺ 1,499.00</p>
+                <div class="product-page2 hidden">
+                    <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex relative justify-center">
+                        <img src="../images/death-by-ramen-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                        <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                            <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                            <p class="price font-extrabold">₺ 1,499.00</p>
+                        </div>
+                        <button class="cart-box absolute bottom-20 hidden justify-center items-center border-2 border-black w-[90%] h-12 bg-white font-semibold text-sm">SEPETE EKLE</button>
                     </div>
-                </div>
-                <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex">
-                    <img src="../images/Shout Oversize Basic Cropped Unisex T-Shirt.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
-                    <div class="product-description flex flex-col w-full items-center justify-around text-center">
-                        <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
-                        <p class="price font-extrabold">₺ 1,499.00</p>
+                    <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex relative justify-center">
+                        <img src="../images/discoteca-shout-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                        <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                            <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                            <p class="price font-extrabold">₺ 1,499.00</p>
+                        </div>
+                        <button class="cart-box absolute bottom-20 hidden justify-center items-center border-2 border-black w-[90%] h-12 bg-white font-semibold text-sm">SEPETE EKLE</button>
                     </div>
-                </div>
-                <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex">
-                    <img src="../images/Oversize Shout Fujibayashi Nagato Unisex T-Shirt-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
-                    <div class="product-description flex flex-col w-full items-center justify-around text-center">
-                        <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
-                        <p class="price font-extrabold">₺ 1,499.00</p>
+                    <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex relative justify-center">
+                        <img src="../images/margarita-tshirt-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                        <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                            <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                            <p class="price font-extrabold">₺ 1,499.00</p>
+                        </div>
+                        <button class="cart-box absolute bottom-20 hidden justify-center items-center border-2 border-black w-[90%] h-12 bg-white font-semibold text-sm">SEPETE EKLE</button>
+                    </div>
+                    <div class="product-box w-[24%] flex-wrap m-4 h-[400px] flex relative justify-center">
+                        <img src="../images/oversize-shout-skullys-pizzeria-unisex-t-shirt-1.webp" alt="" class="bg-slate-600 w-full aspect-square object-cover">
+                        <div class="product-description flex flex-col w-full items-center justify-around text-center">
+                            <p class="w-[300px] text-ellipsis overflow-hidden whitespace-nowrap text-[13px]">Shout Limited Edition SS25 Oversize Unisex Hoodie</p>
+                            <p class="price font-extrabold">₺ 1,499.00</p>
+                        </div>
+                        <button class="cart-box absolute bottom-20 hidden justify-center items-center border-2 border-black w-[90%] h-12 bg-white font-semibold text-sm">SEPETE EKLE</button>
                     </div>
                 </div>
             </div>
